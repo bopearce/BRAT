@@ -10,6 +10,5 @@ httpd = HTTPServer(server_address, SimpleHTTPRequestHandler)
 
 httpd.socket = ssl.wrap_socket(httpd.socket,
                                server_side=True,
-                               certfile='PATH TO CERT FILE HERE',
-                               keyfile='PATH TO KEYFILE HERE')
+                               certfile='PATH TO YOUR PEM HERE')
 httpd.serve_forever()

